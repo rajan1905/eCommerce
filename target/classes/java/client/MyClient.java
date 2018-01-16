@@ -10,6 +10,7 @@ public class MyClient
 	public static void main(String[] args) throws Exception 
 	{
 		Client client = ClientBuilder.newClient();
+		System.out.println("Client is : "+client);
 		try 
 		{
 			System.out.println("*** Create a new Customer ***");
@@ -24,7 +25,7 @@ public class MyClient
 			+ "<country>USA</country>"
 			+ "</customer>";
 			
-			Response response = client.target("http://localhost:8081/services/customers").request().post(Entity.xml(xml));
+			Response response = client.target("http://localhost:8080/services/customers").request().post(Entity.xml(xml));
 			
 			if (response.getStatus() != 201) 
 				throw new RuntimeException("Failed to create");
