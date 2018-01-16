@@ -33,7 +33,7 @@ public class CustomerResourceService
 	private AtomicInteger idCounter = new AtomicInteger();
 	
 	@POST
-	@Consumes("application/xml")
+	@Consumes("application/xml;charset=utf-8")
 	public Response createCustomer(InputStream is) 
 	{
 		Customer customer = readCustomer(is);

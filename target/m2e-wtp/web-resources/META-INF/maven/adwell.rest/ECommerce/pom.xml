@@ -27,7 +27,33 @@
 	    <version>4.0.0</version>
 	    <scope>provided</scope>
 	</dependency>
-    
+  	<!-- https://mvnrepository.com/artifact/org.glassfish.jersey.core/jersey-client -->
+	<!-- https://mvnrepository.com/artifact/org.glassfish.jersey.core/jersey-common -->
+	<dependency>
+		<groupId>org.jboss.resteasy</groupId>
+		<artifactId>resteasy-jaxrs</artifactId>
+		<version>3.0.5.Final</version>
+	</dependency>
+	<dependency>
+		<groupId>org.jboss.resteasy</groupId>
+		<artifactId>resteasy-client</artifactId>
+		<version>3.0.5.Final</version>
+	</dependency>
+	<dependency>
+		<groupId>org.jboss.resteasy</groupId>
+		<artifactId>async-http-servlet-3.0</artifactId>
+		<version>3.0.5.Final</version>
+	</dependency>
+	<dependency>
+		<groupId>org.jboss.resteasy</groupId>
+		<artifactId>jaxrs-api</artifactId>
+		<version>3.0.5.Final</version>
+		</dependency>
+	<dependency>
+		<groupId>org.jboss.resteasy</groupId>
+		<artifactId>resteasy-servlet-initializer</artifactId>
+		<version>3.0.5.Final</version>
+	</dependency>
   </dependencies>
   <build>
     <finalName>ECommerce</finalName>
